@@ -1,0 +1,77 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:sans-serif;
+    background-image:url('./image.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+.box{
+    width:400px;
+    padding:40px;
+    background:rgba(0,0,0,0.8);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+    border-radius:10px;
+}
+.box h2{
+    margin:0 0 30px;
+    color:#fff;
+    text-align:center;
+    
+}
+.box .default{
+    width:100%;
+}
+.box .default input{
+    width:100%;
+    padding:10px 0;
+    font-size:16px;
+    color:#fff;
+    margin-bottom:30px;
+    border:none;
+    border-bottom:1px solid #fff;
+    outline:none;
+    background:transparent;
+}
+.box .default label{
+    padding:10px 0;
+    font-size:16px;
+    color:#fff;
+    pointer-events:none;
+    transition:.5s all;
+}
+.box .default label:hover{
+    margin-left:10px;
+}
+.box form button{
+    display:block;
+    width:200px;
+    height:30px;
+    margin:0 auto;
+    border-radius:15px;
+    background:rgb(34, 34, 226);
+    border:none;
+    color:white;
+    font-family:sans-serif;
+    cursor:pointer;
+    transition:all 0.8s linear;
+}
+.box form button:hover{
+    background:rgb(167, 170, 235);
+    font-size:17px;
+}
+@media screen and (max-width:700px){
+    .box{
+        width:65%;
+    }
+}
+@media screen and (max-width:425px){
+    .box{
+        width:100%;
+    }
+}
